@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+<script>
+    let input = [2, 7, 7, 3, 8, 5, 9, 10];
+    let x = 7;
+    function tryRemoveFromArray(arr, number) {
+        let returnedArray = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === number) {
+                continue;
+            } else {
+                returnedArray.push(arr[i]);
+            }
+        }
+        return returnedArray;
+    }
+    console.log(tryRemoveFromArray(input, x));
+</script>
+</body>
+</html>

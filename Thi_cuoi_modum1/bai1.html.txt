@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+<script>
+    let mark = [2, 7, 7, 3, 8, 5, 9, 10];
+    let max = findMax(mark);
+    function findMax(mark) {
+        let max = mark[0];
+        for (let i = 0; i < mark.length; i++) {
+            if (mark[i] > max) {
+                max = mark[i];
+            }
+        }
+        return max;
+    }
+    document.write("Ði?m l?n nh?t là: " + max);
+</script>
+</body>
+</html>
